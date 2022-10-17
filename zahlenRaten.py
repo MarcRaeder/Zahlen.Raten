@@ -24,7 +24,12 @@ def game():
 
     while True:
 
-        currentGuess = int(input())
+        try:
+            currentGuess = int(input())
+        except ValueError:
+            print("Nur Zahlen sind erlaubt")
+            continue
+
         guessInGame = currentGuess < min or currentGuess > max
         distanceGuessToNumber = abs(currentGuess - number)
         firstTryColdStatement = distanceGuessToNumber > 10 and trys == 0 and currentGuess != number
