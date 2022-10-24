@@ -70,10 +70,13 @@ def game():
 
 game()
 
-decision = str(input())
+while True:
 
-if decision.upper() == "JA":
-    tries = 0
-    game()
-else:
-    print("Auf Wiedersehen")
+    decision = str(input())
+
+    if decision.upper() == "JA":
+        tries = 0
+        game()
+    else:
+        print("Auf Wiedersehen")
+        break
