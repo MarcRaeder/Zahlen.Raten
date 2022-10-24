@@ -62,8 +62,9 @@ def game():
                                 distanceLastGuessToNumber, number)
                 lastGuess = currentGuess
             elif currentGuess == number:
-                print("Das war richtig. Nice! Du hast",
-                      tries, "Versuche gebraucht.\nMöchtest du nochmal spielen? Dann gebe 'JA' ein.\nFalls nicht dann gib irgendwas anderes ein.")
+                print("Das war richtig. Nice! Du hast", tries, "Versuche gebraucht.\n\
+                    Möchtest du nochmal spielen? Dann gebe 'JA' ein.\n\
+                    Falls nicht dann gib irgendwas anderes ein.")
                 break
 
 
